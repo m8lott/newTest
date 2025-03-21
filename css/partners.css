@@ -1,0 +1,35 @@
+.partners {
+  width: 100%;
+  margin-top: 80px;
+  position: relative;
+}
+.partners__container {
+  padding: 0 35px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-direction: column;
+}
+.partners__title {
+  align-self: flex-start;
+}
+.partners__title h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  color: #252d33;
+}
+.partners__items {
+  display: flex;
+  gap: 40px;
+  @media screen and (max-width: 992px) {
+    flex-direction: column;
+  }
+}
+.partners__item {
+  border-radius: 20px;
+  padding: 26px;
+  background-color: #ffffff;
+  width: 200px;
+  text-align: center;
+}

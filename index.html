@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Med Studio – Онлайн-курсы для медицинских специалистов</title>
+    <meta
+      name="description"
+      content="Повышайте квалификацию с Med Studio! Онлайн-курсы для врачей, медсестер и студентов медицины. Современные методики, сертификаты и удобный формат обучения."
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div id="paymentPopup" class="popup">
+        <div class="popup-content">
+          <span class="close-btn">&times;</span>
+          <h2>Оплата курса</h2>
+          <form class="payment-form">
+            <div class="form-group">
+              <label for="cardNumber">Номер карты</label>
+              <input
+                type="text"
+                id="cardNumber"
+                placeholder="XXXX XXXX XXXX XXXX"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="cardName">Имя на карте</label>
+              <input
+                type="text"
+                id="cardName"
+                placeholder="ИМЯ ФАМИЛИЯ"
+                required
+              />
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="expiry">Срок действия</label>
+                <input type="text" id="expiry" placeholder="MM/ГГ" required />
+              </div>
+              <div class="form-group">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" placeholder="XXX" required />
+              </div>
+            </div>
+            <button type="submit" class="submit-btn">Оплатить</button>
+          </form>
+        </div>
+      </div>
+      <header class="header">
+        <div class="header__main">
+          <div class="header__top">
+            <div class="header__logo">
+              <a class="header__logo-link" href="index.html">
+                <img
+                  class="header__logo-img"
+                  src="assets/img/logo.svg"
+                  alt="logo"
+                />
+              </a>
+            </div>
+            <nav class="header__menu">
+              <ul class="menu">
+                <li class="menu__item">
+                  <a class="menu__link" href="#">Расписание</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">Курсы</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">Проекты</a>
+                </li>
+                <li class="menu__item submenu-item">
+                  <a class="menu__link" href="#">Медиатека</a>
+                  <ul class="submenu">
+                    <li><a href="#">Item1</a></li>
+                    <li><a href="#">Item2</a></li>
+                    <li><a href="#">Item3</a></li>
+                  </ul>
+                </li>
+                <li class="menu__item submenu-item">
+                  <a class="menu__link" href="#">О Проекте</a>
+                  <ul class="submenu">
+                    <li><a href="#">Item1</a></li>
+                    <li><a href="#">Item2</a></li>
+                    <li><a href="#">Item3</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+            <div class="header__ms-logo">
+              <a href="#">
+                <img src="assets/img/msclub.svg" alt="img" />
+              </a>
+            </div>
+            <ul class="menu account">
+              <li class="menu__item submenu-item">
+                <a class="menu__link" href="#">Личный Кабинет</a>
+                <ul class="submenu">
+                  <li><a href="#">Item1</a></li>
+                  <li><a href="#">Item2</a></li>
+                  <li><a href="#">Item3</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="burger-menu">
+          <div class="burger" id="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+        </div>
+        <nav class="nav" id="nav">
+          <ul>
+            <li class="mobile-menu__item">
+              <a href="#" class="mobile-menu__link">Расписание</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a href="#" class="mobile-menu__link">Курсы</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a href="#" class="mobile-menu__link">Проекты</a>
+            </li>
+            <li class="mobile-menu__item submenuu-item">
+              <a class="mobile-menu__link" href="#">Медиатека</a>
+              <span class="submenuu-toggle">▼</span>
+              <ul class="submenuu">
+                <li><a href="#">Item1</a></li>
+                <li><a href="#">Item3</a></li>
+                <li><a href="#">Item3</a></li>
+              </ul>
+            </li>
+            <li class="mobile-menu__item submenuu-item">
+              <a class="mobile-menu__link" href="#">Личный Кабинет</a>
+              <span class="submenuu-toggle">▼</span>
+              <ul class="submenuu">
+                <li><a href="#">Item1</a></li>
+                <li><a href="#">Item3</a></li>
+                <li><a href="#">Item3</a></li>
+              </ul>
+            </li>
+            <li class="mobile-menu__item submenuu-item">
+              <a class="mobile-menu__link" href="#">О Проекте</a>
+              <span class="submenuu-toggle">▼</span>
+              <ul class="submenuu">
+                <li><a href="#">Item1</a></li>
+                <li><a href="#">Item3</a></li>
+                <li><a href="#">Item3</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <div class="header__bottom">
+          <nav class="header__subnav">
+            <ul class="header__subnav-list">
+              <li><a href="#">Описание</a></li>
+              <li><a href="#">Обучение</a></li>
+              <li><a href="#">Чат</a></li>
+              <li><a href="#">Документы и оплата</a></li>
+            </ul>
+          </nav>
+          <ul class="header__subnav-mobile">
+            <li class="menu__item submenu-item">
+              <a class="menu__link subnav" href="#">Описание</a>
+              <ul class="submenu subnav">
+                <li><a href="#">Обучение</a></li>
+                <li><a href="#">Чат</a></li>
+                <li><a href="#">Документы и оплата</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <section class="hero section">
+          <div class="hero__container">
+            <div class="hero__left">
+              <div class="hero__stats">
+                <img src="assets/img/nmoLogo.svg" alt="img" />
+                <p>+36</p>
+              </div>
+              <div class="hero__info">
+                <div class="hero__info-item">
+                  <p>новый поток</p>
+                </div>
+                <div class="hero__info-item">
+                  <p>с 25 августа</p>
+                </div>
+                <div class="hero__info-item">
+                  <img src="assets/img/knowledge.svg" alt="img" />
+                  <p>12 модулейк</p>
+                </div>
+                <div class="hero__info-item">
+                  <img src="assets/img/time.svg" alt="img" />
+                  <p>40 ак. часов</p>
+                </div>
+              </div>
+              <div class="hero__title">
+                <h1>
+                  Лечение острых вирусных инфекций методом энтервектоскопии
+                </h1>
+              </div>
+              <div class="hero__btns-top">
+                <a href="#">Записаться</a>
+                <a href="#">Подробнее</a>
+              </div>
+              <div class="hero__btns-bottom">
+                <a href="#">Подробнее</a>
+                <a href="#">
+                  <img src="assets/img/payments.svg" alt="img" />
+                  Записаться</a
+                >
+              </div>
+            </div>
+            <div class="hero__right">
+              <img src="assets/img/orto.svg" alt="img" />
+            </div>
+          </div>
+        </section>
+        <div class="main-layout">
+          <div class="main-block">
+            <section class="info section">
+              <div class="info__container">
+                <p>
+                  Зенитное часовое число, как бы это ни казалось парадоксальным,
+                  притягивает случайный Ганимед. Как было показано выше, природа
+                  гамма-всплексов вызывает болид . Вселенная достаточно огромна,
+                  чтобы аномальная джетовая активность последовательно оценивает
+                  центральный параметр. Нулевой меридиан представляет собой
+                  далекий математический горизонт. Хотя хpонологи не увеpены, им
+                  кажется, что декретное время вызывает лимб. У планет-гигантов
+                  нет твёрдой поверхности, таким образом астероид прочно
+                  оценивает натуральный логарифм.
+                </p>
+              </div>
+            </section>
+            <section class="pay desk section">
+              <div class="pay__container">
+                <div class="pay__title"><h3>Оплата курса</h3></div>
+                <div class="pay__desc">
+                  <p>
+                    Курс будет доступен сразу после оплаты, но для получения
+                    баллов НМО необходимо предоставить
+                    <a href="#" target="_blank">документы</a>
+                  </p>
+                </div>
+                <div class="pay__price">
+                  <h2>7 999 ₽</h2>
+                </div>
+                <div class="pay__btn" id="paymentBtn">
+                  <a href="#">
+                    <img src="assets/img/payments.svg" alt="img" />
+                    Перейти к оплате курса
+                  </a>
+                </div>
+                <div class="pay__discount">
+                  <p>
+                    <a href="#">Получить скидку 10%</a>
+                  </p>
+                </div>
+              </div>
+            </section>
+            <section class="program section">
+              <div class="program__container">
+                <div class="program__title">
+                  <h2>Программа курса</h2>
+                </div>
+                <div class="program__parts">
+                  <div class="program__part">
+                    <div class="program__part-title">
+                      <h3>Часть 1. Теоретическая часть</h3>
+                    </div>
+                    <div class="program__part-items">
+                      <div class="program__part-item">
+                        <img src="assets/img/lecture1.png" alt="img" />
+                        <p>
+                          Лекция 1. Что такое резекция лазером и в чём
+                          преимущество энтервектоскопии для лечения бесплодия
+                        </p>
+                      </div>
+                      <div class="program__part-item">
+                        <img src="assets/img/lecture2.png" alt="img" />
+                        <p>
+                          Лекция 2. Энтервектоскопия как базовый метод лечения
+                          гемангиомы Шлейна
+                        </p>
+                      </div>
+                      <div class="program__part-item">
+                        <img src="assets/img/lecture3.png" alt="img" />
+                        <p>
+                          Лекция 3. Проведение прокралификации кожа при
+                          завершении энтервектоскопии и дальнейшее
+                          симптоматическое лечение
+                        </p>
+                      </div>
+                      <div class="program__part-item">
+                        <img src="assets/img/lecture4.png" alt="img" />
+                        <p>Онлайн-трансляция со всеми спикерами</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="program__part">
+                    <div class="program__part-title">
+                      <h3>Часть 2. Практическая часть</h3>
+                    </div>
+                    <div class="program__part-items">
+                      <div class="program__part-item">
+                        <img src="assets/img/lecture1.png" alt="img" />
+                        <p>
+                          Лекция 1. Что такое резекция лазером и в чём
+                          преимущество энтервектоскопии для лечения бесплодия
+                        </p>
+                      </div>
+                      <div class="program__part-item">
+                        <img src="assets/img/lecture2.png" alt="img" />
+                        <p>
+                          Лекция 2. Энтервектоскопия как базовый метод лечения
+                          гемангиомы Шлейна
+                        </p>
+                      </div>
+                      <div class="program__part-item">
+                        <img src="assets/img/lecture3.png" alt="img" />
+                        <p>
+                          Лекция 3. Проведение прокралификации кожа при
+                          завершении энтервектоскопии и дальнейшее
+                          симптоматическое лечение
+                        </p>
+                      </div>
+                      <div class="program__part-item">
+                        <img src="assets/img/lecture4.png" alt="img" />
+                        <p>Онлайн-трансляция со всеми спикерами</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="program__part">
+                    <div class="program__part-title">
+                      <h3>Часть 3. Финал</h3>
+                    </div>
+                    <div class="program__part-items">
+                      <div class="program__part-item">
+                        <img src="assets/img/lecture1.png" alt="img" />
+                        <p>
+                          Лекция 1. Что такое резекция лазером и в чём
+                          преимущество энтервектоскопии для лечения бесплодия
+                        </p>
+                      </div>
+                      <div class="program__part-item">
+                        <img src="assets/img/lecture2.png" alt="img" />
+                        <p>
+                          Лекция 2. Энтервектоскопия как базовый метод лечения
+                          гемангиомы Шлейна
+                        </p>
+                      </div>
+                      <div class="program__part-item">
+                        <img src="assets/img/lecture3.png" alt="img" />
+                        <p>
+                          Лекция 3. Проведение прокралификации кожа при
+                          завершении энтервектоскопии и дальнейшее
+                          симптоматическое лечение
+                        </p>
+                      </div>
+                      <div class="program__part-item">
+                        <img src="assets/img/lecture4.png" alt="img" />
+                        <p>Онлайн-трансляция со всеми спикерами</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="program__final-part">
+                    <div class="program__final-part-subtitle">
+                      <p>доступно после прохождения курса</p>
+                    </div>
+                    <div class="program__final-part-title">
+                      <img src="assets/img/reward.svg" alt="img" />
+                      <h3>Часть 4. Итоговый контроль</h3>
+                    </div>
+                    <div class="program__info">
+                      <div class="program__info-item">
+                        <img src="assets/img/quest.svg" alt="img" />
+                        Вопросов: 30
+                      </div>
+                      <div class="program__info-item">
+                        <img src="assets/img/clock.svg" alt="img" />
+                        Время: 60 мин
+                      </div>
+                      <div class="program__info-item">
+                        <img src="assets/img/sync.svg" alt="img" />
+                        Попыток: 2
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <aside class="pay mob section">
+            <div class="pay__container">
+              <div class="pay__title"><h3>Оплата курса</h3></div>
+              <div class="pay__desc">
+                <p>
+                  Курс будет доступен сразу после оплаты, но для получения
+                  баллов НМО необходимо предоставить
+                  <a href="#" target="_blank">документы</a>
+                </p>
+              </div>
+              <div class="pay__price">
+                <h2>7 999 ₽</h2>
+              </div>
+              <div class="pay__btn">
+                <a href="#">
+                  <img src="assets/img/payments.svg" alt="img" />
+                  Перейти к оплате курса
+                </a>
+              </div>
+              <div class="pay__discount">
+                <p>
+                  <a href="#">Получить скидку 10%</a>
+                </p>
+              </div>
+            </div>
+          </aside>
+        </div>
+        <section class="discount section">
+          <div class="discount__container">
+            <div class="discount__left">
+              <div class="discount__subtitle">
+                <p>Подарок</p>
+              </div>
+              <div class="discount__title">
+                <h2>Даём скидку 10% за просмотр материала партнёров</h2>
+              </div>
+              <div class="discount__desc">
+                <p>
+                  Зенитное часовое число, как бы это ни казалось парадоксальным,
+                  притягивает случайный Ганимед. Как было показано выше, природа
+                  гамма-всплексов вызывает болид.
+                </p>
+              </div>
+            </div>
+            <div class="discount__right">
+              <img
+                src="assets/img/discount.png"
+                alt="Video Preview"
+                class="video-preview"
+              />
+              <img
+                src="assets/img/discount.svg"
+                alt="Video Preview"
+                class="discount-badge"
+              />
+            </div>
+          </div>
+        </section>
+        <section class="speakers section">
+          <div class="speakers__container">
+            <div class="speakers__title">
+              <h2>Спикеры</h2>
+            </div>
+            <div class="speakers__items">
+              <div class="speakers__item">
+                <div class="speakers__item-left">
+                  <img src="assets/img/speaker1.jpg" alt="img" />
+                </div>
+                <div class="speakers__item-right">
+                  <div class="speakers__item-name">
+                    <h3>Константинопольский Константин Константинович</h3>
+                  </div>
+                  <div class="speakers__item-desc">
+                    <p>
+                      Главный внештатный специалист Минздрава России по
+                      управлению сестринской деятельностью, главная медицинская
+                      сестра ФГБУ «HMXЦ им. Н.И. Пирогова» Минздрава России,
+                      доцент кафедры управления сестринской деятельностью и
+                      социальной работы Первого МГМУ им. И.М. Сеченова, к.м.н.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="speakers__item">
+                <div class="speakers__item-left">
+                  <img src="assets/img/speaker2.jpg" alt="img" />
+                </div>
+                <div class="speakers__item-right">
+                  <div class="speakers__item-name">
+                    <h3>Елисеева Дарья Дмитриевна</h3>
+                  </div>
+                  <div class="speakers__item-desc">
+                    <p>
+                      Главный внештатный специалист Минздрава России по
+                      управлению сестринской деятельностью, главная медицинская
+                      сестра ФГБУ «HMXЦ им. Н.И. Пирогова»
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="sponsors section">
+          <div class="sponsors__container">
+            <div class="sponsors__title">
+              <h2>Генеральные спонсоры</h2>
+            </div>
+            <div class="sponsors__items">
+              <div class="sponsors__item">
+                <a href="#">
+                  <img src="assets/img/sponsor1.jpg" alt="img" />
+                </a>
+              </div>
+              <div class="sponsors__item">
+                <a href="#">
+                  <img src="assets/img/sponsor2.jpg" alt="img" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="partners">
+          <div class="partners__container">
+            <div class="partners__title">
+              <h2>Партнёры</h2>
+            </div>
+            <div class="partners__items">
+              <div class="partners__item">
+                <img src="assets/img/bayer.svg" alt="img" />
+              </div>
+              <div class="partners__item">
+                <img src="assets/img/bristol.svg" alt="img" />
+              </div>
+
+              <div class="partners__item">
+                <img src="assets/img/amgen.svg" alt="img" />
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="js/header.js"></script>
+    <script src="js/smooth.js"></script>
+    <script src="js/gsap.min.js"></script>
+    <script src="js/scrollTrigger.min.js"></script>
+    <script src="js/program.js"></script>
+    <script src="js/animation.js"></script>
+    <script src="js/popUp.js"></script>
+  </body>
+</html>

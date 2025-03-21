@@ -1,0 +1,65 @@
+.speakers.section {
+  width: 100%;
+  margin-top: 80px;
+}
+.speakers__container {
+  padding: 0 35px;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+
+  flex-direction: column;
+}
+.speakers__title {
+  align-self: flex-start;
+}
+.speakers__title h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  color: #252d33;
+  margin-bottom: 32px;
+}
+.speakers__items {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  @media screen and (max-width: 992px) {
+    flex-direction: column;
+  }
+}
+.speakers__item {
+  border-radius: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: center;
+  height: 274px;
+}
+
+@media screen and (max-width: 768px) {
+  .speakers__item {
+    flex-direction: column;
+    height: 100%;
+    text-align: center;
+    align-items: center; /* Центрирование в колонке */
+  }
+}
+.speakers__item-right {
+  max-width: 339px;
+}
+.speakers__item-name h3 {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 32px;
+  color: #252d33;
+}
+.speakers__item-desc p {
+  font-size: 14px;
+  line-height: 22px;
+  margin-top: 16px;
+  color: #94a9b7;
+}

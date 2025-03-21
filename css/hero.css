@@ -1,0 +1,134 @@
+.hero {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  margin-top: 70px;
+}
+
+.hero__container {
+  padding: 47px 35px;
+  gap: 20px;
+  background-image: url("../assets/img/bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  gap: 50px;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+.hero__stats {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.hero__left {
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+.hero__stats p {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+}
+.hero__info {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-top: 33px;
+  @media screen and (max-width: 768px) {
+    flex-wrap: wrap;
+  }
+}
+.hero__title {
+  max-width: 700px;
+}
+.hero__btns-top {
+  display: flex;
+  gap: 17px;
+}
+.hero__btns-top a {
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  padding: 5px 12px;
+  border-radius: 500px;
+  transition: all 0.5s;
+}
+.hero__btns-top a:hover {
+  background-color: #ffffff;
+  color: #252d33;
+}
+.hero__btns-bottom {
+  display: flex;
+  gap: 195px;
+  margin-top: 102px;
+  @media screen and (max-width: 992px) {
+    gap: 50px;
+    margin-top: 50px;
+  }
+}
+.hero__btns-bottom a:first-child {
+  color: #ffffff;
+  background-color: #252d33;
+  border: 2px solid #252d33;
+  padding: 10px 12px;
+  border-radius: 500px;
+  transition: all 0.5s;
+}
+.hero__btns-bottom a:first-child:hover {
+  color: #252d33;
+  background-color: #ffffff;
+  border: 2px solid #ffffff;
+}
+.hero__btns-bottom a:last-child {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  padding: 10px 12px;
+  border-radius: 500px;
+  transition: all 0.5s;
+}
+.hero__info-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.hero__info-item p {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 20px;
+  white-space: nowrap;
+}
+.hero__info-item:first-child {
+  background-color: #ffffff;
+  color: #252d33;
+  border-radius: 100px;
+  padding: 5px 12px;
+}
+
+.hero__left > * {
+  opacity: 0;
+}
+
+.hero__right img {
+  opacity: 0;
+  transform: scale(0.8);
+}

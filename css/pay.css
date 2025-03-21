@@ -1,0 +1,73 @@
+.pay.section {
+  width: 376px;
+  height: 388px;
+  margin-right: 20px;
+  position: relative;
+  top: 50px;
+  right: 0;
+  margin-left: auto;
+}
+.pay.mob {
+  @media screen and (max-width: 992px) {
+    display: none;
+  }
+}
+.pay.desk {
+  display: none;
+  @media screen and (max-width: 992px) {
+    margin-top: 50px;
+
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    left: 0;
+    top: 60px;
+    margin: 0 auto;
+    padding: 0 35px;
+    margin-bottom: 130px;
+  }
+}
+.pay__container {
+  border-radius: 20px;
+  padding: 24px;
+  background-color: #ffffff;
+  color: #252d33;
+}
+.pay__title {
+  margin-bottom: 16px;
+}
+.pay__desc {
+  margin-bottom: 24px;
+}
+.pay__desc a {
+  color: #40b526;
+}
+
+.pay__btn a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #40b526;
+  color: #ffffff;
+  padding: 16px 20px;
+  border-radius: 500px;
+  margin-top: 24px;
+  margin-bottom: 16px;
+  transition: box-shadow 0.3s ease;
+
+  max-width: 300px;
+}
+
+.pay__btn a:hover {
+  box-shadow: 0 0 15px rgba(64, 181, 38, 0.8), 0 0 30px rgba(64, 181, 38, 0.5);
+}
+.pay__discount {
+  display: flex;
+  justify-content: center;
+}
+.pay__discount a {
+  font-size: clamp(16px, 2.5vw, 18px);
+  line-height: 1.56;
+  text-align: center;
+  color: #40b526;
+}

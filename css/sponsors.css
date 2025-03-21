@@ -1,0 +1,36 @@
+.sponsors.section {
+  width: 100%;
+  margin-top: 80px;
+}
+.sponsors__container {
+  padding: 0 35px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-direction: column;
+}
+.sponsors__title {
+  align-self: flex-start;
+}
+.sponsors__title h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  color: #252d33;
+}
+.sponsors__items {
+  display: flex;
+  gap: 40px;
+  @media screen and (max-width: 992px) {
+    flex-direction: column;
+  }
+}
+
+.sponsors__item img {
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.sponsors__item img:hover {
+  transform: scale(1.1);
+}

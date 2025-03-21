@@ -1,0 +1,82 @@
+@import url("normalize.css");
+@import url("header.css");
+@import url("hero.css");
+@import url("program.css");
+@import url("pay.css");
+@import url("discount.css");
+@import url("speakers.css");
+@import url("sponsors.css");
+@import url("partners.css");
+@import url("popUp.css");
+@font-face {
+  font-family: "PT Root UI";
+  src: url("../assets/fonts/PT-Root-UI_Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "PT Root UI", sans-serif;
+  overflow-x: hidden;
+  background-color: #f3f7f9;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+h1,
+h2 {
+  font-weight: 700;
+  font-size: clamp(24px, 5vw, 48px);
+  line-height: 1.2;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: clamp(18px, 4vw, 30px);
+  line-height: 1.33;
+}
+
+a,
+p {
+  font-size: clamp(16px, 2.5vw, 18px);
+  line-height: 1.56;
+}
+
+.main-layout {
+  display: flex;
+  justify-content: center;
+}
+.main-block {
+  flex: 1;
+  margin-right: 20px;
+  @media screen and (max-width: 992px) {
+    margin-right: 0;
+  }
+}
+.info {
+  width: 100;
+  margin-top: 58px;
+  color: #252d33;
+  padding: 0 35px;
+}
